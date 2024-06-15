@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Sonucu</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sonuc.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-title">TEST SONUCU</h1>
+        <div class="content-container">
+            <img src="{{ url_for('static', filename=image_file) }}" alt="Risk Result Image" class="logo">
+        </div>
+        <div class="button-container">
+            <button class="form-btn" onclick="location.href='/'">Anasayfa</button>
+            <button class="form-btn-one" onclick="location.href='/grafikler'">Grafikleri Gör</button>
+            <button class="form-btn-two" onclick="location.href='/soru1'">Testi Tekrarla</button>
+        </div>
+    </div>
+</body>
+</html>

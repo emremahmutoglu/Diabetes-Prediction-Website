@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diyabet Tahmini</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Diyabet Tahmini</h1>
+        <img src="{{ url_for('static', filename='diyabet.png') }}" alt="diyabet" class="diyabet-img">
+        <p>Diyabet, vücudunuzun kan şekerini düzenleme yeteneğini etkileyen kronik bir hastalıktır. İki ana tipi vardır: Tip 1 diyabet ve Tip 2 diyabet. Tip 1 diyabet genellikle çocukluk veya gençlik döneminde ortaya çıkar ve vücut insülin üretmediğinde meydana gelir. Tip 2 diyabet ise genellikle yetişkinlerde görülür ve vücut insülin üretse bile etkili bir şekilde kullanamadığında oluşur. Diyabetin kontrol altında tutulmaması, kalp hastalıkları, böbrek yetmezliği, göz sorunları ve sinir hasarları gibi ciddi sağlık sorunlarına yol açabilir. Düzenli kan şekeri kontrolü, sağlıklı beslenme, egzersiz ve gerektiğinde ilaç tedavisi, diyabet yönetiminde önemli rol oynar. Bu test, diyabet riskinizi değerlendirmenize yardımcı olacaktır.</p>
+        <form action="/soru1" method="POST">
+            <button type="submit" class="btn">Testi Başlat</button>
+        </form>
+    </div>
+</body>
+</html>
